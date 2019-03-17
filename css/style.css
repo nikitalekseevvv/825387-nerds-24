@@ -374,6 +374,11 @@ img {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.main-nav-active {
+	border-bottom: 2px solid #fb565a;
+	padding-bottom: 3px;
+}
+
 .header-cart {
 	color: black;
 	font-size: 16px;
@@ -1008,5 +1013,122 @@ img {
 	color: #444444;
 	margin: 0;
 	margin-left: 1px;
+}
+
+/* Стили каталога */
+
+.logo-link:hover {
+	opacity: 0.8;
+}
+
+.logo-link:active {
+	opacity: 0.3;
+}
+
+.catalog-name-center {
+	width: 1160px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 110px;
+}
+
+.catalog-name-center h1 {
+	font-size: 55px;
+	line-height: 55px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	margin-top: 69px;
+}
+
+.catalog-block {
+	width: 1160px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+}
+
+/* Стили для фильтров */
+
+.filters {
+	width: 260px;
+	margin-right: 140px;
+}
+
+/* Стили для сортировки */
+
+.sorting-block {
+	display: flex;
+	margin-top: 57px;
+}
+
+.sorting-block span {
+	font-size: 18px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-right: 266px;
+}
+
+.sorting-sign,
+.sorting-change {
+	border: 0;
+	outline: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sorting-sign input,
+.sorting-change input  {
+	padding: 0;
+	margin: 0;
+	display: none;
+}
+
+.sorting-sign label {
+	font-size: 14px;
+	line-height: 18px;
+	margin-right: 23px;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sign-item:checked + label {
+	color: black;
+}
+
+.sorting-change label{
+	position: relative;
+}
+
+.sorting-change label[for=up]:before {
+	content: "";
+	position: absolute;
+	border: 6px solid transparent;	
+	border-bottom: 10px solid #a6a6a6;
+	top: 0px;
+	right: -65px;
+}
+
+.sorting-change label[for=down]:before {
+	content: "";
+	position: absolute;
+	border: 6px solid transparent;	
+	border-top: 10px solid #a6a6a6;
+	top: 5px;
+	right: -36px;
+}
+
+.sign-change:checked + label[for=up]:before {
+	border-bottom: 10px solid black;
+}
+
+.sign-change:checked + label[for=down]:before {
+	border-top: 10px solid black;
+}
+
+.sorting-sign label:hover,
+.sorting-change label:hover {
+	opacity: 0.6;
 }
 

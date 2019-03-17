@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <div class="header-background">
+      <section>
+        <header class="main-header">
+          <a class="logo-link" href="index.html">
+            <img class="logo-header" src="img/nerds-logo.svg" alt="Нёрдс" width="160" height="65">
+          </a>
+          <nav class="main-nav">
+            <ul class="main-nav-items">
+              <li class="main-nav-item"><a href="#">Студия</a></li>
+              <li class="main-nav-item"><a href="#">Клиенты</a></li>
+              <li class="main-nav-item main-nav-active"><a href="#">Магазин</a></li>
+              <li class="main-nav-item"><a href="#">Контакты</a></li> 
+            </ul>
+          </nav>
+          <a class="header-cart" href="#">Корзина</a>
+        </header>
+        <section="catalog-name">
+        <div class="catalog-name-center">
+          <h1>Магазин готовых шаблонов</h1>
+        </div>
+        </section>
+      </div>
+      <main>
+      <div class="catalog-block">
+        <section class="filters">Тут будут фильтры</section>
+        <div class="sorting-and-items">
+          <section class="sorting-block">
+            <span>Сортировать:</span>
+            <fieldset class="sorting-sign">
+              <input class="sign-item" id="sortprice" type="radio" name="sign" checked><label for="sortprice">По цене</label>
+              <input class="sign-item" id="sorttype" type="radio" name="sign"><label for="sorttype">По типу</label>
+              <input class="sign-item" id="sortname" type="radio" name="sign"><label for="sortname">По названию</label>
+            </fieldset>
+            <fieldset class="sorting-change">
+              <input class="sign-change" id="up" type="radio" name="change" checked><label for="up"><span class="visually-hidden">Вверх</span></label>
+              <input class="sign-change" id="down" type="radio" name="change"><label for="down"><span class="visually-hidden">Вниз</span></label>
+            </fieldset>
+          </section>
+          <section class="catalog-items">
+          </section>
+        </div>
+      </div>
+      <section class="map-block">
+        <div class="map-center">
+          <section class="contacts-block">
+            <span>Nёrds Design Studio</span>
+            <p class="contact-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="contact-phone">тел. +7 (812) 275-75-75</p>
+            <a class="button button-modal" href="#">Напишите нам</a>
+          </section>
+        </div>
+      </section>
+      </main>
+      <footer class="footer-main">
+        <div class="footer-center">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <ul class="social-button">
+            <li class="vk-button"><a href="#"><span class="visually-hidden">Nёrds в Вконтакте</span></a></li>
+            <li class="fb-button"><a href="#"><span class="visually-hidden">Nёrds в Фейсбуке</span></a></li>
+            <li class="inst-button"><a href="#"><span class="visually-hidden">Nёrds в Инстаграмме</span></a></li>
+          </ul>
+          <div class="footer-adt">
+            <span>Давайте дружить, это выгодно!</span>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+      </footer>
+      <section class="modal">
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <span>Напишите нам</span>
+        <form class="modal-feedback" action="https://echo.htmlacademy.ru" method="post">
+          <ul>
+            <li><label>Ваше имя:</label><input class="modal-name" type="name" name="feedback-name" id="name" placeholder="Имя Фамилия"></li>
+            <li><label>Ваш e-mail:</label><input class="modal-email" type="email" name="feedback-email" id="email" placeholder="email@example.com"></li>
+            <li><label>Текст письма:</label><textarea class="modal-text" id="text" name="feedback-text" placeholder="В свободной форме"></textarea></li>
+            <li><input class="button button-feedback" id="feedback-submit" type="submit" value="Отправить"></li>
+          </ul>
+        </form>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
