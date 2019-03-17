@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -71,5 +72,84 @@
         </div>
       </div>
     </section>
+
+    <div class="about-us-block">
+      <div class="about-us-center">
+        <article class="about-us-text">
+          <span class="about-us-header">Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</span>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <span class="about-us-list">Выполняем заказы на разработку:</span>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </article>
+        <section class="сompany-statistics">
+          <img src="img/nerds-illustration.png" width="360" height="208" alt="Нёрдс">
+          <span class="statistics-table-header">с 2004 года Любим точность во всем:</span>
+          <table>
+            <tr>
+              <td class="table-up">146<sup>&#37;</sup></td>
+              <td class="table-up">100<sup>&#37;</sup></td>
+              <td class="table-up">50<sup>&#37;</sup></td>
+            </tr>
+            <tr>
+              <td class="table-down">Уровень самоотдачи</td>
+              <td class="table-down">Соблюдение сроков</td>
+              <td class="table-down">Минимальная предоплата</td>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </div>
+    <section class="project-block">
+      <div class="project-block-center">
+        <h2 class="visually-hidden">Наши проекты</h2>
+        <ul>
+          <li><a class="html-academy" href="#"><span class="visually-hidden">HTML Academy</span></a></li>
+          <li><a class="borodinski" href="#"><span class="visually-hidden">Barbershop Borodinski</span></a></li>
+          <li><a class="pink" href="#"><span class="visually-hidden">Pink</span></a></li>
+          <li><a class="mishka" href="#"><span class="visually-hidden">Mishka</span></a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="map-block">
+      <div class="map-center">
+        <section class="contacts-block">
+          <span>Nёrds Design Studio</span>
+          <p class="contact-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contact-phone">тел. +7 (812) 275-75-75</p>
+          <a class="button button-modal" href="#">Напишите нам</a>
+        </section>
+      </div>
+    </section>
+    <section class="footer-main">
+      <div class="footer-center">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social-button">
+          <li class="vk-button"><a href="#"><span class="visually-hidden">Nёrds в Вконтакте</span></a></li>
+          <li class="fb-button"><a href="#"><span class="visually-hidden">Nёrds в Фейсбуке</span></a></li>
+          <li class="inst-button"><a href="#"><span class="visually-hidden">Nёrds в Инстаграмме</span></a></li>
+        </ul>
+        <div class="footer-adt">
+          <span>Давайте дружить, это выгодно!</span>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </section>
+    <section class="modal">
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <span>Напишите нам</span>
+        <form class="modal-feedback" action="https://echo.htmlacademy.ru" method="post">
+          <ul>
+            <li><label>Ваше имя:</label><input class="modal-name" type="name" name="feedback-name" id="name" placeholder="Имя Фамилия"></li>
+            <li><label>Ваш e-mail:</label><input class="modal-email" type="email" name="feedback-email" id="email" placeholder="email@example.com"></li>
+            <li><label>Текст письма:</label><textarea class="modal-text" id="text" name="feedback-text" placeholder="В свободной форме"></textarea></li>
+            <li><input class="button button-feedback" id="feedback-submit" type="submit" value="Отправить"></li>
+          </ul>
+        </form>
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
