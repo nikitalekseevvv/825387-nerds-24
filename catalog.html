@@ -32,7 +32,62 @@
       </div>
       <main>
       <div class="catalog-block">
-        <section class="filters">Тут будут фильтры</section>
+        <section class="filters">
+          <form>
+            <span class="visually-hidden">Фильтр:</span>
+            <fieldset class="filter-price">
+              <legend>Стоимость:</legend>
+              <div class="range-price">
+                <div class="range-scale">
+                  <div class="range-bar">
+                  </div>
+                </div>
+              </div>
+              <div class="price-value">
+                <span class="price-min-name">от</span>
+                <input class="price-min" type="text" name="price-min" value="0">
+                <span class="price-max-name">до</span>
+                <input class="price-max" type="text" name="price-max" value="15 000">
+              </div>
+             </fieldset>
+              <fieldset class="filter-grid">
+              <legend>Сетка:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" id="adaptive" name="grid" value="adaptive" checked><label for="adaptive">Адаптивная</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" id="fixed" name="grid" value="fixed"><label for="fixed">Фиксированная</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" id="rubber" name="grid" value="rubber"><label for="rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset> 
+
+            <fieldset class="filter-qualities">
+              <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="slider" name="slider" value="slider" checked><label for="slider">Слайдер</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="features" name="features" value="features"><label for="features">Блок преимуществ</label>
+                </li>
+                <li class="filter-option">
+                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="news" name="news" value="news" checked><label for="news">Новости</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="photo" name="photo" value="photo"><label for="photo">Галерея</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="cart" name="cart" value="cart"><label for="cart">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <input class="show-result" id="filters" type="submit" value="Показать">
+          </form>
+        </section>
         <div class="sorting-and-items">
           <section class="sorting-block">
             <span>Сортировать:</span>
@@ -47,6 +102,67 @@
             </fieldset>
           </section>
           <section class="catalog-items">
+            <ul>
+              <li class="catalog-item item-sedona">
+                <a class="item-link" href="#"><span class="visually-hidden">Шаблон Sedona</span></a>
+                <div class="item-info">
+                <a class="item-name" href="#"><h3>Sedona</h3></a>
+                <p>Информационный сайт для туристов</p>
+                <a class="button" href="#">9 900 руб.</a>
+                </div>
+              </li>
+
+              <li class="catalog-item item-pinkapp">
+                <a class="item-link" href="#"><span class="visually-hidden">Шаблон Pink App</span></a>
+                <div class="item-info">
+                <a class="item-name" href="#"><h3>Pink App</h3></a>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <a class="button" href="#">9 900 руб.</a>
+                </div>
+              </li>
+
+              <li class="catalog-item item-barbershop">
+                <a class="item-link" href="#"><span class="visually-hidden">Шаблон Barbershop</span></a>
+                <div class="item-info">
+                <a class="item-name" href="#"><h3>Barbershop</h3></a>
+                <p>Сайт салона красоты. Для мужчин, да.</p>
+                <a class="button" href="#">9 900 руб.</a>
+                </div>
+              </li>
+
+              <li class="catalog-item item-mishka">
+                <a class="item-link" href="#"><span class="visually-hidden">Шаблон Mishka</span></a>
+                <div class="item-info">
+                <a class="item-name" href="#"><h3>Mishka</h3></a>
+                <p>Интернет-магазин вязаных игрушек</p>
+                <a class="button" href="#">9 900 руб.</a>
+                </div>
+              </li>
+
+              <li class="catalog-item item-aplus">
+                <a class="item-link" href="#"><span class="visually-hidden">Шаблон A Plus</span></a>
+                <div class="item-info">
+                <a class="item-name" href="#"><h3>A Plus</h3></a>
+                <p>Лендинг курсов повышения квалификации</p>
+                <a class="button" href="#">9 900 руб.</a>
+                </div>
+              </li>
+
+              <li class="catalog-item item-kvast">
+                <a class="item-link" href="#"><span class="visually-hidden">Шаблон Кваст</span></a>
+                <div class="item-info">
+                <a class="item-name" href="#"><h3>Кваст</h3></a>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <a class="button" href="#">9 900 руб.</a>
+                </div>
+              </li>
+            </ul>
+             <div class="page-items">
+              <a class="page-number page-one" href="#">1</a>
+              <a class="page-number" href="#">2</a>
+              <a class="page-number" href="#">3</a>
+              <a class="page-number page-next" href="#">Следующая</a>
+            </div>
           </section>
         </div>
       </div>
@@ -87,6 +203,6 @@
           </ul>
         </form>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
