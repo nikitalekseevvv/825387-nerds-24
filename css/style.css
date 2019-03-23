@@ -203,10 +203,9 @@ img {
 	margin-bottom: 41px;
 }
 
-.modal ul {
+.modal form {
 	padding: 0;
 	margin: 0;
-	list-style: none;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -276,11 +275,11 @@ img {
 	color: #e74246;
 }
 
-.modal li:first-child {
+.modal p:first-child {
 	margin-right: 40px;
 }
 
-.modal li:nth-child(3) {
+.modal p:nth-child(3) {
 	margin-top: 34px;
 }
 
@@ -349,8 +348,9 @@ img {
 /* Стили для шапки */
 
 .header-background {
-	background-color: #e1e1e1;
+	background-color: #eeeeee;
 	padding-top: 49px;
+	width: 100%;
 }
 
 .main-header {
@@ -371,10 +371,16 @@ img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	margin-top: 26px;
+	width: 660px;
+}
+
+.main-nav-item {
+	margin-right: 46px;
 }
 
 .main-nav-item:first-child {
@@ -387,6 +393,10 @@ img {
 
 .main-nav-item:nth-child(3) {
 	margin-right: 45px;
+}
+
+.main-nav-item:last-child {
+	margin-right: 0px;
 }
 
 .main-nav-item a {
@@ -670,6 +680,7 @@ img {
 .about-us-text p {
 	display: block;
 	margin-bottom: 40px;
+	color: #283136;
 }
 
 .about-us-list {
@@ -691,6 +702,7 @@ img {
 	position: relative;
 	margin-left: 37px;
 	margin-bottom: 24px;
+	color: #283136;
 }
 
 .about-us-text li:last-child {
@@ -1077,6 +1089,7 @@ img {
 .catalog-name-center h1 {
 	font-size: 55px;
 	line-height: 55px;
+	font-weight: 500;
 	text-align: center;
 	margin: 0;
 	padding: 0;
@@ -1100,7 +1113,8 @@ img {
 	display: -ms-flexbox;
 	display: flex;
 	margin-top: 57px;
-}
+	width: 700px;
+} 
 
 .sorting-block span {
 	font-size: 18px;
@@ -1110,38 +1124,39 @@ img {
 	margin-right: 266px;
 }
 
-.sorting-sign,
-.sorting-change {
+.sorting-items,
+.sorting-buttons {
 	border: 0;
-	outline: none;
+	list-style: none;
 	padding: 0;
 	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.sorting-sign input,
-.sorting-change input  {
-	padding: 0;
-	margin: 0;
-	display: none;
-}
 
-.sorting-sign label {
+.sorting-item {
 	font-size: 14px;
 	line-height: 18px;
-	margin-right: 23px;
+	margin-right: 25px;
 	text-transform: uppercase;
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.sign-item:checked + label {
+.sorting-item:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-item:hover,
+.active-point {
 	color: black;
 }
 
-.sorting-change {
+.sorting-buttons {
 	position: relative;
 }
 
-.sorting-change label[for=up]:before {
+.button-down:before {
 	content: "";
 	position: absolute;
 	border: 6px solid transparent;	
@@ -1150,26 +1165,17 @@ img {
 	right: -65px;
 }
 
-.sorting-change label[for=down]:before {
+.button-up:before {
 	content: "";
 	position: absolute;
 	border: 6px solid transparent;	
 	border-top: 10px solid #a6a6a6;
-	top: 5px;
+	top: 6px;
 	right: -36px;
 }
 
-.sign-change:checked + label[for=up]:before {
-	border-bottom: 10px solid black;
-}
-
-.sign-change:checked + label[for=down]:before {
+.button-up-active {
 	border-top: 10px solid black;
-}
-
-.sorting-sign label:hover,
-.sorting-change label:hover {
-	opacity: 0.6;
 }
 
 /* Стили списка товаров */
@@ -1184,21 +1190,24 @@ img {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	padding-top: 18px;
+	padding-top: 51px;
 }
 
 .catalog-item {
 	display: inline-block;
+	vertical-align: top;
 	width: 360px;
-	min-height: 576px;
-	margin-top: 73px;
+	height: 576px;
+	margin-top: 40px;
 	margin-right: 40px;
+	margin-bottom: 33px;
 	position: relative;
 	z-index: 0;
+	background-repeat: no-repeat;
 }
 
 .catalog-item:nth-child(2n) {
-	margin-right: 0px;
+	margin-right: 0;
 }
 
 .catalog-item:after {
@@ -1223,32 +1232,36 @@ img {
 }
 
 .item-sedona {
-	background-color: grey;
+	background-color: lightgrey;
 	background-image: url("../img/img-sedona.jpg");
 }
 
 .item-pinkapp {
-	background-color: grey;
+	background-color: lightgrey;
 	background-image: url("../img/img-pink.jpg");
 }
 
 .item-barbershop {
-	background-color: grey;
+	background-color: lightgrey;
 	background-image: url("../img/img-barbershop.jpg");
+	height: 579px;
+	margin-bottom: 29px;
 }
 
 .item-mishka {
-	background-color: grey;
+	background-color: lightgrey;
 	background-image: url("../img/img-mishka.jpg");
+	height: 579px;
+	margin-bottom: 29px;
 }
 
 .item-aplus {
-	background-color: grey;
+	background-color: lightgrey;
 	background-image: url("../img/img-aplus.jpg");
 }
 
 .item-kvast {
-	background-color: grey;
+	background-color: lightgrey;
 	background-image: url("../img/img-kvast.jpg");
 }
 
@@ -1284,36 +1297,36 @@ img {
 }
 
 .item-info p {
+	display: block;
 	font-size: 16px;
 	line-height: 18px;
 	color: #666666;
 	text-align: center;
-	min-width: 230px;
 	margin: 0 auto;
 }
 
 .item-sedona p {
-	min-width: 180px;
+	width: 180px;
 }
 
 .item-pinkapp p {
-	min-width: 230px;
+	width: 230px;
 }
 
 .item-barbershop p {
-	min-width: 170px;
+	width: 170px;
 }
 
 .item-mishka p {
-	min-width: 140px;
+	width: 140px;
 }
 
 .item-aplus p {
-	min-width: 220px;
+	width: 220px;
 }
 
 .item-kvast p {
-	min-width: 210px;
+	width: 210px;
 }
 
 .item-info .button {
@@ -1333,7 +1346,7 @@ img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-top: 60px;
+	margin-top: 28px;
 	margin-bottom: 60px;
 }
 
