@@ -9,6 +9,7 @@ body {
 	color: #000000;
 	background-color: #ffffff;
 	position: relative;
+	min-width: 1200px;
 }
 
 a {
@@ -482,6 +483,7 @@ img {
 	line-height: 24px;
 	display: block;
 	margin-bottom: 54px;
+	color: #283136;
 }
 
 .main-slider .button {
@@ -618,6 +620,7 @@ img {
 	display: block;
 	width: 250px;
 	margin-bottom: 47px;
+	color: #283136;
 }
 
 .category-item .button {
@@ -1366,7 +1369,8 @@ img {
 }
 
 .catalog-item:hover {
-	box-shadow: 0 0 20px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.3);
+			box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
 /* Стили для переключателя страниц */
